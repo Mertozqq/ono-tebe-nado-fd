@@ -60,7 +60,7 @@
   line-height: 24.3px;
 }
 
-.address__font-style {
+.address__item {
   font-style: normal;
   text-underline-offset: 4px;
 }
@@ -102,21 +102,20 @@
 }
 
 .aligned-text {
-  
-
   display: block;
 }
 
-.aligned-text_center {
+.aligned-text_paddings {
   padding: 0;
   padding-top: 20px;
+}
+
+.aligned-text_center {
   padding-left: 30px;
-  
   text-align: center;
 }
 
 .aligned-text_right {
-  padding-top: 20px;
   padding-left: 614px; /* костыль, надо как-то пофиксить */
   text-align: end;
 }
@@ -350,7 +349,7 @@
   display: grid;
   grid-template-columns: 265px 164px 240px;
   justify-content: space-between;
-  margin: 156px 50px 60px;
+  margin: 156px 50px 82px;
 }
 
 
@@ -358,14 +357,10 @@
 .footer__address {
   flex-wrap: nowrap;
 
-
   margin-left: 0px;
   padding-bottom: 0px;
-  font-family: "Raleway", Arial, sans-serif;
-  font-weight: 400;
-  font-size: 18px;
+
   font-style: normal;
-  line-height: 24.3px;
 }
 
 .footer-menu {
@@ -377,6 +372,9 @@
 }
 
 .footer__menu-list {
+  padding-right: 2px;
+  padding-bottom: 3px;
+
   list-style: none;
 }
 
@@ -407,13 +405,13 @@
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  gap: 40px;
+  gap: 46px; 
   list-style: none;
   margin-bottom: 50px;
 }
 
 .footer__social-link {
-  display: block; /* чтобы вся картинка становилась ссылкой */
+  display: inline-block; /* чтобы вся картинка становилась ссылкой */
 }
 
 .footer__social-icon {
